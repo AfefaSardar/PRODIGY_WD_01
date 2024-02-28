@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eBook Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #genre ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    #genre li {
+      margin: 0 10px;
+    }
+    #content-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      font-size: 24px;
+    }
+    #genre button {
+      background-color: #4CAF50; 
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    #genre button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  <header>
+    <h1>eBook Store</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contributer">Contributer</a></li>
+        <li><a href="#genre">Genres</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome!</h2>
+    <p><b>Welcome to our eBook Store!</b></p>
+    <p>At our eBook Store, we are dedicated to providing you with a wide selection of eBooks across various genres, ensuring that there's something for everyone. Whether you're a fan of captivating fiction, seeking personal growth through self-help books, or looking for valuable insights in the business world, we've got you covered. Our mission is to make reading accessible and enjoyable for all. With our user-friendly platform, you can easily browse through our extensive collection, discover new authors, and explore diverse topics.</p>
+    <p><b>Start your journey into the world of eBooks today! Happy reading!</b></p>
+  </section>
+  
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Our eBook Store is your one-stop destination for discovering and enjoying a vast collection of eBooks. With a passion for literature and a commitment to excellence, we strive to provide you with the best reading experience possible. At Our eBook Store, we believe in the power of books to inspire, educate, and entertain. That's why we curate our collection carefully, ensuring that every eBook we offer meets our high standards of quality and relevance.</p>
+    <p>Our team is comprised of avid readers, writers, and technology enthusiasts who are dedicated to making your eBook journey seamless and enjoyable. Whether you're looking for timeless classics, contemporary bestsellers, or niche titles, we're here to help you discover your next great read.</p>
+    <p><b>Thank you for choosing Our eBook Store. We look forward to being your trusted companion on your reading adventures!</b></p>
+  </section>
+
+  <section id="contributer">
+    <h2>Contributors</h2>
+    <p>Our eBook Store is fortunate to collaborate with talented individuals who contribute to our vast collection of eBooks. From established authors to aspiring writers, our contributors bring a diverse range of voices and perspectives to our platform. We believe in supporting and promoting authors from all walks of life, providing them with a platform to share their stories and ideas with readers worldwide. Whether you're a seasoned writer or just starting your literary journey, we welcome you to join our community of contributors.</p>
+    <p>If you're interested in becoming a contributor to Our eBook Store, we invite you to reach out to us. We're always excited to discover new talent and expand our collection with fresh, engaging content.</p>
+    <p><b>Thank you to all our contributors for sharing your creativity and passion with us. Together, we can inspire readers and enrich lives through the power of storytelling.</b></p>
+  </section>
+
+  <section id="genre">
+    <h2>Genres</h2>
+    <p>You can choose any genre you like!</p>
+    <ul>
+      <li><button onclick="showGenre('fiction')">Fiction</button></li>
+      <li><button onclick="showGenre('nonfiction')">Non-Fiction</button></li>
+      <li><button onclick="showGenre('mystery')">Mystery</button></li>
+      <li><button onclick="showGenre('romance')">Romance</button></li>
+      <li><button onclick="showGenre('sciencefiction')">Science Fiction</button></li>
+    </ul>
+  </section>
+
+  <section id="books">
+    <div class="book fiction">
+      <img src="kite.jpg">
+      <h3><u>Kite Runner</u></h3>
+    </div>
+    <div class="book fiction">
+      <img src="tsp.jpg">
+      <h3><u>The Silent Patient</u></h3>
+    </div>
+    <div class="book fiction">
+      <img src="alchem.jpg">
+      <h3><u>Alchemist</u></h3>
+    </div>
+    <div class="book nonfiction">
+      <img src="rp.jpg">
+      <h3><u>Rich Dad Door Dad</u></h3>
+    </div>
+    <div class="book nonfiction">
+      <img src="pom.jpg">
+      <h3><u>Psychology of Money</u></h3>
+    </div>
+    <div class="book nonfiction">
+      <img src="atom.jpg">
+      <h3><u>Atomic Habits</u></h3>
+    </div>
+    <div class="book mystery">
+      <img src="jn.jpg">
+      <h3><u>Jack Knifed</u></h3>
+    </div>
+    <div class="book mystery">
+      <img src="sh.jpg">
+      <h3><u>Sherlock Holmes</u></h3>
+    </div>
+    <div class="book mystery">
+      <img src="ttf.png">
+      <h3><u>To The Forest</u></h3>
+    </div>
+    <div class="book romance">
+      <img src="mm.jpg">
+      <h3><u>My Mechanical Romance</u></h3>
+    </div>
+    <div class="book romance">
+      <img src="pap.jpg">
+      <h3><u>Pride and Prejudice </u></h3>
+    </div>
+    <div class="book romance">
+      <img src="ba.jpg">
+      <h3><u>Begin Again</u></h3>
+    </div>
+    <div class="book sciencefiction">
+      <img src="dune.jpg">
+      <h3><u>Dune</u></h3>
+    </div>
+    <div class="book sciencefiction">
+      <img src="1984.png">
+      <h3><u>1984</u></h3>
+    </div>
+    <div class="book sciencefiction">
+      <img src="uts.jpg">
+      <h3><u>Under The Skin</u></h3>
+    </div>
+  </section>
+
+  <style>
+    .contact-icons {
+      display: flex;
+    }
+  
+    .contact-icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+  
+    .contact-icon:hover {
+      filter: invert(30%);
+    }
+  </style>
+  
+  <style>
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .contact-icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      border: 2px solid #333;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  </style>
+  
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feedback, or inquiries, please don't hesitate to get in touch with us. We're here to assist you in any way we can.</p>
+    <div class="contact-icons">
+      <a href="mailto:contact@ourebookstore.com" target="_blank">
+        <img src="mail.jpeg" class="contact-icon">
+      </a>
+      <a href="tel:+1234567890" target="_blank">
+        <img src="phone.jpg" class="contact-icon">
+      </a>
+      <a href="https://www.facebook.com/your_facebook_page" target="_blank">
+        <img src="facebook.png" class="contact-icon">
+      </a>
+      <a href="https://www.instagram.com/your_instagram_username" target="_blank">
+        <img src= "instagram.png" class="contact-icon">
+      </a>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to Dive into the World of eBooks?</h2>
+      <a href="#" class="btn">Browse Now</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Our eBook Store. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
